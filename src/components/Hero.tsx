@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Crown, Star } from 'lucide-react';
 import CountUp from 'react-countup';
 import cassiusImg from '../assets/Cassius Randell.png';
+import heroVideo from '../assets/Collaboration over competition 🚀, WE NEED ALL OF THAT 😤🎥- @drelegendary1k ••#atlanta #busines.mp4';
 import { BackgroundPixelStars } from './ui/background-pixel-stars';
 
 export const Hero = () => {
@@ -18,11 +19,27 @@ export const Hero = () => {
   return (
     <section ref={containerRef} className="relative min-h-screen flex flex-col items-center justify-center pt-10 pb-20 overflow-hidden bg-brand-dark bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAIElEQVR42mIUEhJiwAbevXuHVZyJgUQwqmEUDB0AEGAADd8DEPTX6ksAAAAASUVORK5CYII=')] bg-[size:10px]">
       
-      <BackgroundPixelStars />
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0 opacity-40">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="w-full h-full object-cover"
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        {/* Gradient overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-dark/40 to-brand-dark" />
+      </div>
+
+      <div className="absolute inset-0 z-0 opacity-50">
+        <BackgroundPixelStars />
+      </div>
 
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-red/10 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-brand-dark" />
       </motion.div>
 
       <div className="container mx-auto px-4 z-10 relative mt-10">
