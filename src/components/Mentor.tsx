@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import cassiusImg from '../assets/Cassius Randell.png';
+import { FireButton } from './ui/FireButton';
 
 export const Mentor = () => {
   return (
@@ -56,9 +57,9 @@ export const Mentor = () => {
             </div>
 
             <div className="mt-10">
-              <button className="btn-primary px-8 py-4 rounded-md uppercase tracking-widest text-sm w-full md:w-auto">
-                JOIN THE WEBINAR — $50 →
-              </button>
+              <FireButton href="https://www.fanbasis.com/agency-checkout/presidentialempire/wkgXz" className="w-full md:w-auto">
+                JOIN THE WEBINAR — $50
+              </FireButton>
             </div>
           </motion.div>
         </div>

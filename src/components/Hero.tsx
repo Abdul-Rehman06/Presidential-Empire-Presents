@@ -5,6 +5,7 @@ import CountUp from 'react-countup';
 import cassiusImg from '../assets/Cassius Randell.png';
 import heroVideo from '../assets/hero-video.mp4';
 import { BackgroundPixelStars } from './ui/background-pixel-stars';
+import { FireButton } from './ui/FireButton';
 
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -105,9 +106,9 @@ export const Hero = () => {
             transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
             className="flex flex-col items-center gap-6"
           >
-            <button className="btn-primary px-12 py-5 rounded-md text-lg uppercase tracking-widest w-full sm:w-auto">
+            <FireButton href="https://www.fanbasis.com/agency-checkout/presidentialempire/wkgXz" className="w-full sm:w-auto">
               REGISTER NOW — $50
-            </button>
+            </FireButton>
             
             <div className="flex flex-col items-center mt-4">
               <div className="flex gap-1 mb-2 text-brand-gold">

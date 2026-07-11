@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+import { FireButton } from './ui/FireButton';
 
 export const CTA = () => {
   const [timeLeft, setTimeLeft] = useState({ Days: 4, Hours: 21, Mins: 9, Secs: 20 });
@@ -42,9 +43,9 @@ export const CTA = () => {
               </div>
             ))}
           </motion.div>
-          <button className="btn-outline-gold px-12 py-4 rounded-md uppercase tracking-widest text-sm font-bold">
+          <FireButton href="https://www.fanbasis.com/agency-checkout/presidentialempire/wkgXz">
             CLAIM YOUR SPOT — $50
-          </button>
+          </FireButton>
         </div>
 
         {/* Main CTA */}
@@ -111,9 +112,9 @@ export const CTA = () => {
               </div>
               
               <div className="mt-8">
-                <button className="btn-primary w-full py-4 rounded-md uppercase tracking-widest text-sm font-bold">
+                <FireButton href="https://www.fanbasis.com/agency-checkout/presidentialempire/wkgXz" className="w-full">
                   REGISTER NOW — ONLY $50
-                </button>
+                </FireButton>
                 <p className="text-center text-white/40 text-xs mt-4 uppercase tracking-widest">
                   $50 investment. No excuses. Just results.
                 </p>
