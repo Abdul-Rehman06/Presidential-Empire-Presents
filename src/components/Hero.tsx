@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Crown, Star } from 'lucide-react';
 import CountUp from 'react-countup';
 import cassiusImg from '../assets/Cassius Randell.png';
-import heroVideo from '../assets/Collaboration over competition 🚀, WE NEED ALL OF THAT 😤🎥- @drelegendary1k ••#atlanta #busines.mp4';
+import heroVideo from '../assets/hero-video.mp4';
 import { BackgroundPixelStars } from './ui/background-pixel-stars';
 
 export const Hero = () => {
