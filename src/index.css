@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
+    
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 98%;
+    
+    --primary: 350 89% 40%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 45 35% 50%;
+    --secondary-foreground: 0 0% 10%;
+
+    --border: 0 0% 10%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2182a;
+}
+
+/* Premium Typography */
+.heading-luxury {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-gold {
+  color: #d4af37;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f9d976 0%, #e9b647 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.border-gold {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.bg-red-gradient {
+  background: linear-gradient(180deg, rgba(30, 0, 0, 0) 0%, rgba(60, 0, 0, 0.4) 100%);
+}
+
+.btn-primary {
+  background-color: #c2182a;
+  color: white;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.btn-primary:hover {
+  background-color: #a01020;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(194, 24, 42, 0.4);
+}
+
+.btn-outline-gold {
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  color: #d4af37;
+  transition: all 0.3s ease;
+}
+.btn-outline-gold:hover {
+  background-color: rgba(212, 175, 55, 0.1);
+}
