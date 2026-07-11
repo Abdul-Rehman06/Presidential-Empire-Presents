@@ -37,7 +37,7 @@ export const Award = () => {
               <img 
                 src={awardImg} 
                 alt="Award Presentation" 
-                className="w-full h-full object-cover grayscale"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">

@@ -29,7 +29,7 @@ export const Mentor = () => {
               <img 
                 src={cassiusImg} 
                 alt="Cassius Randell" 
-                className="w-full h-auto grayscale object-cover object-top aspect-[3/4]"
+                className="w-full h-auto object-cover object-top aspect-[3/4]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
             </div>
