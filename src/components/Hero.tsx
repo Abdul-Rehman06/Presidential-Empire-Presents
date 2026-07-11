@@ -18,7 +18,7 @@ export const Hero = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={containerRef} className="relative min-h-screen flex flex-col items-center justify-center pt-10 pb-20 overflow-hidden bg-brand-dark bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAIElEQVR42mIUEhJiwAbevXuHVZyJgUQwqmEUDB0AEGAADd8DEPTX6ksAAAAASUVORK5CYII=')] bg-[size:10px]">
+    <section ref={containerRef} className="relative flex flex-col pt-20 overflow-hidden bg-brand-dark bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAIElEQVR42mIUEhJiwAbevXuHVZyJgUQwqmEUDB0AEGAADd8DEPTX6ksAAAAASUVORK5CYII=')] bg-[size:10px]">
       
       {/* Video Background */}
       <div className="absolute inset-0 z-0 opacity-40">
@@ -43,7 +43,7 @@ export const Hero = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-red/10 rounded-full blur-[120px] pointer-events-none" />
       </motion.div>
 
-      <div className="container mx-auto px-4 z-10 relative mt-10">
+      <div className="container mx-auto px-4 z-10 relative mt-10 pb-40 md:pb-32">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           
           <motion.div
@@ -125,7 +125,7 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="absolute bottom-0 left-0 w-full border-t border-white/10 bg-black/50 backdrop-blur-md py-6 z-20"
+        className="relative md:absolute bottom-0 left-0 w-full border-t border-white/10 bg-black/50 backdrop-blur-md py-6 z-20 mt-auto"
       >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
