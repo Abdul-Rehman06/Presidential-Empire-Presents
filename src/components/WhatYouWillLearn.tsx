@@ -18,7 +18,7 @@ export const WhatYouWillLearn = () => {
   });
 
   return (
-    <section className="py-32 relative bg-black/85">
+    <section className="py-32 relative bg-black">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20 max-w-3xl mx-auto">
           <motion.p 

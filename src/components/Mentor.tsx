@@ -5,7 +5,7 @@ import { FireButton } from './ui/FireButton';
 
 export const Mentor = () => {
   return (
-    <section className="py-32 relative bg-black/85">
+    <section className="py-32 relative bg-black">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-16">
           <motion.h2 

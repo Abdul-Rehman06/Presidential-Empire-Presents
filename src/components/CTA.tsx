@@ -20,7 +20,7 @@ export const CTA = () => {
   }, []);
 
   return (
-    <section className="py-32 relative bg-black/85 overflow-hidden">
+    <section className="py-32 relative bg-black overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl bg-brand-red/10 blur-[120px] rounded-full" />
       </div>
